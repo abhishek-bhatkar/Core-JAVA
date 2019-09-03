@@ -1,0 +1,124 @@
+class Sample1
+{		
+	int var1=2;
+}
+
+public class demo
+{
+	public static void main(String args[])
+		{
+			Sample1 s1=new Sample1();
+			System.out.println(s1.var1);
+		}
+}
+
+--------------------------------------------------
+class Sample2
+{
+	private int var2;
+	public void setvar(int var2)
+		{
+			this.var2=var2;
+		}	
+	public int getvar()
+		{
+			return this.var2;
+		}
+
+}
+
+class demo1
+{
+	public static void main(String args[])
+	{
+		Sample2 s2=new Sample2();
+		s2.setvar(2);
+		System.out.println(s2.getvar());
+	}
+}
+--------------------------------------------
+import java.util.Scanner;
+
+class MyClass {
+  public static void main(String[] args) {
+    Scanner Obj = new Scanner(System.in);
+    System.out.println("Enter percentage");
+    int u = Obj.nextInt();
+  	if(u<30)
+	{
+	System.out.println("Fail");
+	}
+	else if(u<50)
+	{
+	System.out.println("second class");
+	}
+	else if(u>51&&u<75)
+	{
+	System.out.println("first class");
+	}
+	else if(u>75&&u<99)
+	{
+	System.out.println("Distinction");
+	}
+  }
+}
+-----------------------------------------------------
+class number
+{
+public static void main(String args[])
+	{
+		int a=3;
+		while(a<=30)
+		{
+			if(a==24)
+			{
+				a++;
+			}
+				System.out.println(a++);
+			
+		}
+	}
+}
+-----------------------------------------------------
+public class Table
+{
+	public static void main(String args[])
+	{
+		int a=6,i;
+		for(i=1;i<=10;i++)
+		{
+			System.out.println(a*i);
+		}
+	}	
+}
+----------------------------------------------------
+class Ten
+{
+	public static void main(String args[])
+	{	
+		int i=1;
+		do{System.out.println(i++);}
+		while(i<=10);
+	}
+}
+----------------------------------------------------
+class Vowel
+{
+public static void main(String args[])
+	{
+		char c='a';
+		switch(c)
+		{
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'a':
+		case 'e':System.out.println("Vowel");
+		break;
+                default:System.out.println("Not a vowel");
+}
+	}
+}
+-------------------------------------------------
+
+
