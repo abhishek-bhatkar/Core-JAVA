@@ -78,7 +78,7 @@ class MyArithException extends Exception
 
 class Calculator
 {
-	public double caldouble(int n)throws MyArithException
+	public int caldouble(int n)throws MyArithException
 	{	
 		if(n==0)
 		{
@@ -90,8 +90,7 @@ class Calculator
 		}
 		else
 		{
-		double n1=(double)n;
-		return n1;
+		return n1*2;
 		}		
 	}
 }
