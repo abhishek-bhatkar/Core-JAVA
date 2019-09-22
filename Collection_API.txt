@@ -262,64 +262,36 @@ public class program3 {
 
 }
 
-package collection2;
-
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
-//create a HashMap.
-//store  prn no. and students name of 10 students inside the HashMap.
-//display it using iterator.
+/*2) create a HashMap.
+store  prn no. and students name of 10 students inside the HashMap.
+display it using iterator.*/
+public class Hash1 {
 
-
-class MyClass {
-	private int prnNo;
-	private String name;
-	
-	public MyClass(int prnNo, String name) {
-		this.prnNo = prnNo;
-		this.name = name;
-	}
-	public int getPrnNo() {
-		return prnNo;
-	}
-	public void setPrnNo(int prnNo) {
-		this.prnNo = prnNo;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-}
-
-public class assignment2{
-	
-	public static void iterateData(Map<String, MyClass> data) {
-		Set< Entry<String, MyClass> > d = data.entrySet();
-		Iterator< Entry<String, MyClass> > itr = d.iterator();
-		
-		while( itr.hasNext() ) {
-			MyClass temp = itr.next().getValue();
-			System.out.println( temp.getPrnNo() );
-			System.out.println( temp.getName() );
-		}
-	}
-	
 	public static void main(String[] args) {
-	
-		MyClass m1 = new MyClass(1, "a");
-		MyClass m2 = new MyClass(2, "b");
-		
-		Map<String, MyClass> data = new HashMap<String, MyClass>();
-		data.put("first",  m1);
-		data.put("second", m2);
-		
-		iterateData(data);
-		
-
+		// TODO Auto-generated method stub
+		Map<Integer,String> h=new HashMap<Integer,String>();
+		h.put(123,"Abhi");
+		h.put(234,"rohit");
+		h.put(345,"KAl");
+		h.put(456,"ab");
+		System.out.println(h);
+		System.out.println(h.get(123));
+		h.put(123,"ABHkjihh");
+		System.out.println(h.get(123));
+		Set<Entry<Integer,String>>set=h.entrySet();
+		Iterator<Entry<Integer,String>> i=set.iterator();
+		while(i.hasNext())
+		{
+			Map.Entry<Integer,String> mm=(Entry<Integer,String>)i.next();
+			System.out.println(mm.getKey()+":");
+			System.out.println(mm.getValue());
+		}
 	}
 
 }
